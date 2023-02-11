@@ -66,16 +66,21 @@ class StudentBasicDetails(models.Model):
     student_section = models.CharField(max_length=2)
     student_enrolled = models.BooleanField(default=True)
     student_class = models.CharField(choices=get_standard(), max_length=15)
-    student_enrollment_date = models.DateField(auto_now_add=True)
-    updated_on = models.DateField(auto_now=True)
+    student_enrollment_date = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = "student_basic_details"
 
     def save(self, *args, **kwargs):
-        year = dt.date.year
+        nowdate_time = dt.datetime.now()
+        year =  nowdate_time.year
+        print("year", year)
         standard = self.student_class
-        time = dt.time
+        print("standard", standard)
+        time = nowdate_time.time()
+        print("time", time)
+        print()
         self.student_enrollment = f"{year}/{standard}/{time}"
         super(StudentBasicDetails, self).save(*args, **kwargs)
 
@@ -94,6 +99,9 @@ class StudentContactDetails(models.Model):
     class Meta:
         db_table = "student_contact_details"
 
+    def __int__(self):
+        return self.contact_id
+
 
 class StudentParentsDetails(models.Model):
     objects = None
@@ -106,3 +114,18 @@ class StudentParentsDetails(models.Model):
 
     class Meta:
         db_table = "student_parents_details"
+        unique_together = ("student_parent_name", "student_id", "student_parent_relation")
+
+    def __int__(self):
+        return self.student_parent_id
+
+    @staticmethod
+    def save_all(parents_details: list, student_id: int):
+        return_list = []
+        for parent_detail in parents_details:
+            print(parent_detail, "parent-details")
+            parent_query = StudentParentsDetails.objects.create(student_id_id=student_id, **parent_detail)
+            parent_detail["parent_id"] = parent_query.student_parent_id
+            return_list.append(parent_detail)
+        print(return_list)
+        return return_list

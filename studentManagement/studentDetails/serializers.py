@@ -46,3 +46,22 @@ class StudentBasicSerializer(serializers.ModelSerializer):
         model = StudentBasicDetails
         exclude = ('student_enrolled', 'student_enrollment')
 
+    def create(self, validated_data):
+        parents_details = validated_data.pop("parents_details")
+        print(parents_details, "<<<<<parents details")
+        contact_details = validated_data.pop("contact_details")
+        print("Contact details", contact_details)
+        print(validated_data)
+        student_details = StudentBasicDetails.objects.create(**validated_data)
+        print("Student details saved")
+        contact_query = StudentContactDetails.objects.create(student_id=student_details, **contact_details)
+        contact_details["contact_id"] = contact_query.contact_id
+        print("Contact details saved")
+
+        parents_details = StudentParentsDetails.save_all(parents_details, student_details.student_id)
+        print("parents details saved")
+        validated_data["student_id"] = student_details.student_id
+        validated_data["parents_details"] = parents_details
+        validated_data["contact_details"] = contact_details
+
+        return validated_data
