@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-@p(t%h19t2x8_ffj8p-h00yki$%cqy9h=z3qkf8-&p(e+rj#nv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -71,7 +70,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'studentManagement.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -86,6 +84,59 @@ DATABASES = {
     }
 }
 
+LOGGING = {
+    'version': 1,  # Define version mandatory
+    # Version of logging
+    'disable_existing_loggers': False if DEBUG else True,  # define whether to enable /disable django default logger
+    # default true Formatters #######################################################
+    'formatters': {
+
+        # define the format of log as per req. Can be multiple
+        #   To set format for  we have to add key formatt in handler and the specific format key
+
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(lineno)s %(message)s'
+        }
+    },
+    # disable logging
+    # Handlers #############################################################
+    'handlers': {
+        # It'll generate the log. Level and encode define else default value should be taken.
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/loggerDjango-debug-io.log'),
+            'formatter': 'verbose',  # Log format will be in the format define in verbose
+            'encoding': 'utf-8',
+        },
+        'info': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/loggerDjango-info-io.log'),
+            'formatter': 'verbose',
+            'encoding': 'utf-8',
+        },
+        ########################################################################
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    # Loggers ####################################################################
+    # Logger will transcribe every message
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'console'],  # define the handles to be used while logging
+            'propagate': True,  # To decide whether pass the message to ancestor log or not.
+            # 'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+        },
+        'info_log': {
+            'handlers': ['info'],
+            'propagate': True,
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        }
+
+    },
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -105,7 +156,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
@@ -116,7 +166,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/

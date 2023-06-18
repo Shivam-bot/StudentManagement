@@ -2,6 +2,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .serializers import *
 from django.db import transaction
+import logging
+
+logger_info = logging.getLogger("info_log")
 
 
 class StudentBasicView(APIView):
@@ -10,24 +13,23 @@ class StudentBasicView(APIView):
 
         try:
             data = request.data
+            logger_info.info("data >>>> %s >>>> %s", data, request)
             student_id = data.get("student_id")
 
             if student_id is not None:
-                student_details = StudentBasicDetails.objects.filter(student_id=student_id).prefetch_related('studentparentsdetails_set')
+                logger_info.info(f"Request to get student info {student_id}")
+                student_details = StudentBasicDetails.objects.filter(student_id=student_id)
             else:
-                student_details = StudentBasicDetails.objects.filter(student_enrolled=True).prefetch_related('studentparentsdetails_set')
-                print(student_details.query)
+                student_details = StudentBasicDetails.objects.filter(student_enrolled=True)
+                logger_info.info(f"Requests to get student info {student_details}")
 
-            for std in student_details:
-                for parents in std.studentparentsdetails_set.all():
-                    print(parents.student_parent_id)
-                    print(parents.student_parent_name)
-
-            return Response(
-                {"status": True, "data": {"student_details": StudentBasicSerializer(student_details, many=True).data},
-                 "message": {}})
+                return Response(
+                    {"status": True,
+                     "data": {"student_details": StudentBasicSerializer(student_details, many=True).data},
+                     "message": {}})
 
         except Exception as e:
+            logger_info.error(f"{e}")
             return Response(
                 {"status": False, "data": {}, "message": {"exceptional_error": f"{e}"}})
 
@@ -35,15 +37,15 @@ class StudentBasicView(APIView):
         try:
             with transaction.atomic():
                 student_detail = request.data
-                print(student_detail, "<<<<<")
+                logger_info.info(student_detail, "<<<<<")
                 student_serializer = StudentBasicSerializer(data=student_detail)
-                print(student_serializer, "<<<<<student_serializer")
+                logger_info.info(student_serializer, "<<<<<student_serializer")
                 if student_serializer.is_valid():
-                    print("data verified")
+                    logger_info.info("data verified")
                     student_saved_detail = student_serializer.save()
-                    print("student_details_saved")
+                    logger_info.info("student_details_saved")
                     # student_detail["student_id"] = student_saved_detail['student_id']
-                    print("student_detail", student_saved_detail, "<<<<<")
+                    logger_info.info("student_detail", student_saved_detail, "<<<<<")
                     return Response({"status": True, "data": {"student_detail": student_saved_detail}})
                 return Response({"status": False, "data": {}, "message": {"data_invalid": student_serializer.errors}})
 
@@ -56,13 +58,13 @@ class StudentBasicView(APIView):
             student_detail = request.data
             student_id = student_detail.get("student_id")
             if student_id is None:
-                return Response({"status":False, "data":{}, "message":{"student_id": "Student Id cannot be None"}})
+                return Response({"status": False, "data": {}, "message": {"student_id": "Student Id cannot be None"}})
             try:
                 student_instance = StudentBasicDetails.objects.get(student_id=student_id)
             except Exception as e:
                 return Response({"status": False, "data": {}, "message": {"student_id": f"No Data Exist with given "
-                                                                                       f"student Id {student_id}"}})
-            student_serializer = StudentBasicSerializer(data=student_detail, instance =student_instance)
+                                                                                        f"student Id {student_id}"}})
+            student_serializer = StudentBasicSerializer(data=student_detail, instance=student_instance)
             if student_serializer.is_valid():
                 student_saved_detail = StudentBasicSerializer.save()
                 student_detail["student_id"] = student_saved_detail.student_id
@@ -72,4 +74,3 @@ class StudentBasicView(APIView):
         except Exception as e:
             return Response(
                 {"status": False, "data": {}, "message": {"exceptional_error": e}})
-

@@ -3,6 +3,7 @@ from django.db import models
 from enum import Enum, unique
 import datetime as dt
 
+
 # Enum defined for gender so in future chances of getting error will be less
 # Unique decorator to ensure no value is repeating itself.
 
@@ -32,17 +33,16 @@ class RelationsEnum(Enum):
 
 
 def get_standard():
-
     try:
         standard_details = StandardDetails.objects.all()
-        return [(standard_detail.standard, standard_detail.standard) for standard_detail in standard_details] if standard_details.exists() else []
+        return [(standard_detail.standard, standard_detail.standard) for standard_detail in
+                standard_details] if standard_details.exists() else []
     except Exception as e:
         print(f"{e}")
         return [("I", "I"), ("II", "II"), ("III", "III"), ("VI", "VI"), ("V", "V")]
 
 
 class StandardDetails(models.Model):
-
     objects = None
     standard_id = models.AutoField(primary_key=True)
     standard = models.CharField(max_length=15)
@@ -74,13 +74,10 @@ class StudentBasicDetails(models.Model):
 
     def save(self, *args, **kwargs):
         nowdate_time = dt.datetime.now()
-        year =  nowdate_time.year
-        print("year", year)
+        year = nowdate_time.year
         standard = self.student_class
-        print("standard", standard)
         time = nowdate_time.time()
-        print("time", time)
-        print()
+
         self.student_enrollment = f"{year}/{standard}/{time}"
         super(StudentBasicDetails, self).save(*args, **kwargs)
 
@@ -92,7 +89,8 @@ class StudentContactDetails(models.Model):
     contact_alternate_mob_no = models.BigIntegerField(null=True, blank=True)
     contact_email = models.EmailField()
     contact_alternate_email = models.EmailField(null=True, blank=True)
-    student_id = models.OneToOneField(StudentBasicDetails, on_delete=models.SET_NULL, null=True)
+    student_id = models.OneToOneField(StudentBasicDetails, related_name='contact_details', on_delete=models.SET_NULL,
+                                      null=True)
     contact_created_date = models.DateField(auto_now_add=True)
     contact_updated_date = models.DateField(auto_now=True)
 
@@ -108,7 +106,8 @@ class StudentParentsDetails(models.Model):
     student_parent_id = models.AutoField(primary_key=True)
     student_parent_name = models.CharField(max_length=100)
     student_parent_relation = models.CharField(choices=RelationsEnum.relation_choices(), max_length=15)
-    student_id = models.ForeignKey(StudentBasicDetails, on_delete=models.SET_NULL, null=True)
+    student_id = models.ForeignKey(StudentBasicDetails, related_name='parents_details', on_delete=models.SET_NULL,
+                                   null=True)
     student_parent_created_date = models.DateField(auto_now_add=True)
     student_parent_updated_date = models.DateField(auto_now=True)
 

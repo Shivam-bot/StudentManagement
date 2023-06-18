@@ -1,6 +1,9 @@
 from rest_framework import serializers
 from .models import StudentParentsDetails, StudentContactDetails, StudentBasicDetails
 import studentManagement.customValidations as customValidations
+import logging as log
+
+# log.basicConfig(level=log.DEBUG, format= )
 
 
 class StudentParentsSerializer(serializers.ModelSerializer):
