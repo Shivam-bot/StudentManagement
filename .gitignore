@@ -1,0 +1,6 @@
+studentmngmt/
+*.xml
+*.iml
+*/migrations/*
+!/migrations/__init__.py
+*/*.log
