@@ -4,7 +4,7 @@ import studentManagement.customValidations as customValidations
 import logging as log
 
 # log.basicConfig(level=log.DEBUG, format= )
-vali
+
 
 class StudentParentsSerializer(serializers.ModelSerializer):
     class Meta:

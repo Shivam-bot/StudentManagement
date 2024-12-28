@@ -11414,3 +11414,6 @@ INFO 2023-06-25 12:33:35,991 autoreload 677 Watching for file changes with StatR
 INFO 2023-06-25 13:56:16,968 autoreload 677 Watching for file changes with StatReloader
 INFO 2023-07-01 10:07:05,219 autoreload 677 Watching for file changes with StatReloader
 INFO 2023-07-01 13:01:34,908 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 19:50:32,907 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 19:50:52,884 autoreload 266 E:\My_Projects\StudentManagement\studentManagement\studentDetails\serializers.py changed, reloading.
+INFO 2024-12-28 19:50:54,754 autoreload 677 Watching for file changes with StatReloader
