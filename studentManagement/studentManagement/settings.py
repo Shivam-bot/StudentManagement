@@ -96,7 +96,7 @@ DATABASES = {
 LOGGING = {
     'version': 1,  # Define version mandatory
     # Version of logging
-    'disable_existing_loggers': False if DEBUG else True,  # define whether to enable /disable django default logger
+    'disable_existing_loggers': False ,  # define whether to enable /disable django default logger
     # default true Formatters #######################################################
     'formatters': {
 
@@ -112,7 +112,7 @@ LOGGING = {
     'handlers': {
         # It'll generate the log. Level and encode define else default value should be taken.
         'file': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'logs/loggerDjango-debug-io.log'),
             'formatter': 'verbose',  # Log format will be in the format define in verbose
@@ -127,6 +127,7 @@ LOGGING = {
         },
         ########################################################################
         'console': {
+            'level': 'INFO',  # Set the level to INFO or DEBUG to capture info-level logs
             'class': 'logging.StreamHandler',
         },
     },

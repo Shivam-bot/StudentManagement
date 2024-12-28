@@ -11417,3 +11417,13 @@ INFO 2023-07-01 13:01:34,908 autoreload 677 Watching for file changes with StatR
 INFO 2024-12-28 19:50:32,907 autoreload 677 Watching for file changes with StatReloader
 INFO 2024-12-28 19:50:52,884 autoreload 266 E:\My_Projects\StudentManagement\studentManagement\studentDetails\serializers.py changed, reloading.
 INFO 2024-12-28 19:50:54,754 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:11:52,000 autoreload 266 E:\My_Projects\StudentManagement\studentManagement\studentDetails\models.py changed, reloading.
+INFO 2024-12-28 20:11:53,360 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:12:40,719 autoreload 266 E:\My_Projects\StudentManagement\studentManagement\studentDetails\models.py changed, reloading.
+INFO 2024-12-28 20:12:44,635 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:29:05,313 autoreload 266 E:\My_Projects\StudentManagement\studentManagement\studentDetails\__init__.py changed, reloading.
+INFO 2024-12-28 20:29:06,673 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:31:03,218 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:57:12,555 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:57:25,889 autoreload 677 Watching for file changes with StatReloader
+INFO 2024-12-28 20:58:21,686 autoreload 677 Watching for file changes with StatReloader

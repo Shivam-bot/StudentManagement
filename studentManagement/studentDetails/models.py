@@ -2,6 +2,7 @@ from django.db import models
 
 from enum import Enum, unique
 import datetime as dt
+import time
 
 
 # Enum defined for gender so in future chances of getting error will be less
@@ -73,12 +74,12 @@ class StudentBasicDetails(models.Model):
         db_table = "student_basic_details"
 
     def save(self, *args, **kwargs):
-        nowdate_time = dt.datetime.now()
-        year = nowdate_time.years
-        standard = self.student_class
-        time = nowdate_time.time()
+        year = dt.datetime.now().year
 
-        self.student_enrollment = f"{year}/{standard}/{time}"
+        standard = self.student_class
+        mili_sec_time = int(round(time.time() * 1000))
+
+        self.student_enrollment = f"{year}/{standard}/{mili_sec_time}"
         super(StudentBasicDetails, self).save(*args, **kwargs)
 
 
