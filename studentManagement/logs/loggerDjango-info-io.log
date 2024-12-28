@@ -1,0 +1,191 @@
+INFO 2023-06-17 16:09:04,970 views 10 View initiated
+INFO 2023-06-17 16:10:32,526 views 8 View initiated
+INFO 2023-06-17 16:11:19,440 views 8 View initiated
+INFO 2023-06-17 16:12:01,787 views 8 View initiated
+INFO 2023-06-17 16:12:58,725 views 8 View initiated
+INFO 2023-06-17 16:13:17,282 views 8 View initiated
+INFO 2023-06-17 16:14:08,080 views 8 View initiated
+INFO 2023-06-17 16:21:55,155 views 8 View initiated
+INFO 2023-06-17 16:22:00,733 views 30  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,733 views 30  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,733 views 30  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,734 views 30  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,734 views 30  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,734 views 30  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,734 views 30  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:22:00,734 views 30  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:23:06,709 views 8 View initiated
+INFO 2023-06-17 16:23:13,134 views 8 View initiated
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,904 views 30  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:23:19,905 views 30  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:32:15,114 views 8 View initiated
+INFO 2023-06-17 16:32:27,350 views 30  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,350 views 30  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,350 views 30  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,350 views 30  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,350 views 30  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,350 views 30  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,351 views 30  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:32:27,351 views 30  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:33:48,849 views 8 View initiated
+INFO 2023-06-17 16:34:18,977 views 8 View initiated
+INFO 2023-06-17 16:34:53,921 views 8 View initiated
+INFO 2023-06-17 16:34:59,428 views 28 Request to get student info SELECT `student_basic_details`.`student_id`, `student_basic_details`.`student_enrollment`, `student_basic_details`.`student_first_name`, `student_basic_details`.`student_last_name`, `student_basic_details`.`student_gender`, `student_basic_details`.`student_DOB`, `student_basic_details`.`student_section`, `student_basic_details`.`student_enrolled`, `student_basic_details`.`student_class`, `student_basic_details`.`student_enrollment_date`, `student_basic_details`.`updated_on` FROM `student_basic_details` WHERE `student_basic_details`.`student_enrolled` = True
+INFO 2023-06-17 16:34:59,436 views 33  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,436 views 33  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,436 views 33  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,436 views 33  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,437 views 33  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,437 views 33  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,437 views 33  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:34:59,437 views 33  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:36:07,649 views 8 View initiated
+INFO 2023-06-17 16:36:13,821 views 27 Request to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:36:13,825 views 32  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,825 views 32  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,826 views 32  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,826 views 32  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,826 views 32  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,826 views 32  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,826 views 32  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:36:13,826 views 32  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:36:55,095 views 8 View initiated
+INFO 2023-06-17 16:41:39,334 views 8 View initiated
+INFO 2023-06-17 16:42:21,398 views 8 View initiated
+INFO 2023-06-17 16:42:24,741 views 27 Request to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:42:24,751 views 31  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,753 views 31  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,755 views 31  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,756 views 31  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,757 views 31  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,759 views 31  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,760 views 31  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:42:24,763 views 31  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:42:59,055 views 8 View initiated
+INFO 2023-06-17 16:43:02,272 views 27 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:43:02,282 views 31  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,283 views 31  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,285 views 31  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,286 views 31  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,287 views 31  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,289 views 31  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,290 views 31  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:43:02,291 views 31  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:44:02,692 views 8 View initiated
+INFO 2023-06-17 16:44:07,086 views 27 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:44:07,095 views 31  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,096 views 31  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,097 views 31  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,100 views 31  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,102 views 31  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,103 views 31  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,105 views 31  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:44:07,106 views 31  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:46:00,565 views 8 View initiated
+INFO 2023-06-17 16:46:32,423 views 8 View initiated
+INFO 2023-06-17 16:46:36,950 views 27 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:46:36,952 views 30 std is StudentBasicDetails object (1)
+INFO 2023-06-17 16:46:36,954 views 30 std is StudentBasicDetails object (5)
+INFO 2023-06-17 16:46:36,956 views 30 std is StudentBasicDetails object (6)
+INFO 2023-06-17 16:46:36,957 views 30 std is StudentBasicDetails object (7)
+INFO 2023-06-17 16:46:36,958 views 30 std is StudentBasicDetails object (12)
+INFO 2023-06-17 16:46:36,960 views 32  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,960 views 30 std is StudentBasicDetails object (16)
+INFO 2023-06-17 16:46:36,961 views 32  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,961 views 30 std is StudentBasicDetails object (17)
+INFO 2023-06-17 16:46:36,963 views 32  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,963 views 30 std is StudentBasicDetails object (18)
+INFO 2023-06-17 16:46:36,965 views 32  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,965 views 30 std is StudentBasicDetails object (19)
+INFO 2023-06-17 16:46:36,966 views 32  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,967 views 30 std is StudentBasicDetails object (20)
+INFO 2023-06-17 16:46:36,968 views 32  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,968 views 30 std is StudentBasicDetails object (21)
+INFO 2023-06-17 16:46:36,970 views 32  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:46:36,970 views 30 std is StudentBasicDetails object (22)
+INFO 2023-06-17 16:46:36,972 views 32  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:47:36,017 views 8 View initiated
+INFO 2023-06-17 16:47:49,740 views 27 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:48:26,441 views 8 View initiated
+INFO 2023-06-17 16:48:29,308 views 27 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:48:29,311 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,313 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,314 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,316 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,317 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,319 views 32  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,319 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,321 views 32  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,321 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,324 views 32  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,324 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,325 views 32  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,325 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,327 views 32  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,327 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,328 views 32  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,328 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,330 views 32  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:48:29,330 views 30 std is studentDetails.StudentParentsDetails.None
+INFO 2023-06-17 16:48:29,331 views 32  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:49:09,399 views 8 View initiated
+INFO 2023-06-17 16:49:14,625 views 27 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:49:14,628 views 30 std is <QuerySet []>
+INFO 2023-06-17 16:49:14,631 views 30 std is <QuerySet []>
+INFO 2023-06-17 16:49:14,634 views 30 std is <QuerySet []>
+INFO 2023-06-17 16:49:14,636 views 30 std is <QuerySet []>
+INFO 2023-06-17 16:49:14,639 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (1)>]>
+INFO 2023-06-17 16:49:14,643 views 32  student_id : 12, student_parent_id: 1, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,643 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (2)>]>
+INFO 2023-06-17 16:49:14,647 views 32  student_id : 16, student_parent_id: 2, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,647 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (3)>]>
+INFO 2023-06-17 16:49:14,650 views 32  student_id : 17, student_parent_id: 3, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,651 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (4)>]>
+INFO 2023-06-17 16:49:14,653 views 32  student_id : 18, student_parent_id: 4, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,653 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (5)>]>
+INFO 2023-06-17 16:49:14,658 views 32  student_id : 19, student_parent_id: 5, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,658 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (6)>]>
+INFO 2023-06-17 16:49:14,662 views 32  student_id : 20, student_parent_id: 6, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,662 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (7)>]>
+INFO 2023-06-17 16:49:14,665 views 32  student_id : 21, student_parent_id: 7, student_parent_relation: Father
+INFO 2023-06-17 16:49:14,665 views 30 std is <QuerySet [<StudentParentsDetails: StudentParentsDetails object (9)>]>
+INFO 2023-06-17 16:49:14,668 views 32  student_id : 22, student_parent_id: 9, student_parent_relation: Father
+INFO 2023-06-17 16:49:50,365 views 8 View initiated
+INFO 2023-06-17 16:58:43,279 views 26 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 16:59:20,050 views 26 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:00:34,367 views 26 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:00:34,369 views 29 std StudentBasicDetails object (1)
+INFO 2023-06-17 17:01:21,789 views 24 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:01:21,790 views 27 std StudentBasicDetails object (1)
+INFO 2023-06-17 17:22:06,977 views 24 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:22:06,979 views 27 std StudentBasicDetails object (1)
+INFO 2023-06-17 17:22:17,840 views 24 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:22:17,841 views 27 std StudentBasicDetails object (1)
+INFO 2023-06-17 17:23:17,503 views 24 Request to get student infaaao <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:24:19,880 views 24 Request to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:25:42,022 views 24 Request to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-17 17:26:43,333 views 20 Request to get student info 1
+INFO 2023-06-25 10:31:48,891 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/'>
+INFO 2023-06-25 10:31:49,066 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:32:18,675 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/'>
+INFO 2023-06-25 10:32:18,684 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:32:19,530 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/'>
+INFO 2023-06-25 10:32:19,534 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:32:24,015 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/?format=json'>
+INFO 2023-06-25 10:32:24,020 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:32:37,488 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/'>
+INFO 2023-06-25 10:32:37,493 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:32:42,597 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/?format=api'>
+INFO 2023-06-25 10:32:42,603 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:32:58,781 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/?format=api'>
+INFO 2023-06-25 10:32:58,787 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:34:58,341 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/'>
+INFO 2023-06-25 10:34:58,346 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>
+INFO 2023-06-25 10:36:34,010 views 16 data >>>> {} >>>> <rest_framework.request.Request: GET '/student/student_details/'>
+INFO 2023-06-25 10:36:34,015 views 24 Requests to get student info <QuerySet [<StudentBasicDetails: StudentBasicDetails object (1)>, <StudentBasicDetails: StudentBasicDetails object (5)>, <StudentBasicDetails: StudentBasicDetails object (6)>, <StudentBasicDetails: StudentBasicDetails object (7)>, <StudentBasicDetails: StudentBasicDetails object (12)>, <StudentBasicDetails: StudentBasicDetails object (16)>, <StudentBasicDetails: StudentBasicDetails object (17)>, <StudentBasicDetails: StudentBasicDetails object (18)>, <StudentBasicDetails: StudentBasicDetails object (19)>, <StudentBasicDetails: StudentBasicDetails object (20)>, <StudentBasicDetails: StudentBasicDetails object (21)>, <StudentBasicDetails: StudentBasicDetails object (22)>]>

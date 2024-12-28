@@ -74,7 +74,7 @@ class StudentBasicDetails(models.Model):
 
     def save(self, *args, **kwargs):
         nowdate_time = dt.datetime.now()
-        year = nowdate_time.year
+        year = nowdate_time.years
         standard = self.student_class
         time = nowdate_time.time()
 

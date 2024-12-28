@@ -4,12 +4,12 @@ import studentManagement.customValidations as customValidations
 import logging as log
 
 # log.basicConfig(level=log.DEBUG, format= )
-
+vali
 
 class StudentParentsSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentParentsDetails
-        fields = ("student_parent_name", 'student_parent_relation')
+        fields = ("student_parent_name", 'student_parent_relation','student_parent_id')
 
     def validate(self, data):
         parent_name = data.get("student_parent_name")
@@ -20,10 +20,9 @@ class StudentParentsSerializer(serializers.ModelSerializer):
 
 
 class StudentContactSerializers(serializers.ModelSerializer):
-
     class Meta:
         model = StudentContactDetails
-        fields = "__all__"
+        exclude = ("contact_created_date", "contact_updated_date" )
 
     def validate(self, data):
         contact_mob_no = data.get("contact_mob_no")

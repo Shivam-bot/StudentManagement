@@ -44,8 +44,7 @@ class StudentBasicView(APIView):
                     logger_info.info("data verified")
                     student_saved_detail = student_serializer.save()
                     logger_info.info("student_details_saved")
-                    # student_detail["student_id"] = student_saved_detail['student_id']
-                    logger_info.info("student_detail", student_saved_detail, "<<<<<")
+                    logger_info.info("student_detail", student_saved_detail)
                     return Response({"status": True, "data": {"student_detail": student_saved_detail}})
                 return Response({"status": False, "data": {}, "message": {"data_invalid": student_serializer.errors}})
 
@@ -53,7 +52,7 @@ class StudentBasicView(APIView):
             return Response(
                 {"status": False, "data": {}, "message": {"exceptional_error": f"Roll Backed everything {e}"}})
 
-    def put(self, request):
+    def put(self, request): 
         try:
             student_detail = request.data
             student_id = student_detail.get("student_id")
